@@ -1,0 +1,28 @@
+{
+  "name": "02-21t4-group-exercise",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Developers-Institute-Classrooms/02-21t4-group-exercise.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Developers-Institute-Classrooms/02-21t4-group-exercise/issues"
+  },
+  "homepage": "https://github.com/Developers-Institute-Classrooms/02-21t4-group-exercise#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "mongodb-memory-server": "^8.7.2"
+  }
+}
