@@ -93,21 +93,31 @@ Add you Rest API design here
 
 |          |               |
 | -------- | ------------- |
-| Endpoint | ENDPOINT HERE |
-| Method   | METHOD HERE   |
+| Endpoint | /api/chirps/1 |
+| Method   | GET           |
 
 ### Response Details
 
-|             |                  |
-| ----------- | ---------------- |
-| Status Code | STATUS CODE HERE |
+|             |        |
+| ----------- | ------ |
+| Status Code | 200 OK |
 
 
 #### Example Response Body
 
 ```json
 {
-    "example": "Example"
+    "id": 1,
+    "username": "Example User",
+    "profilePicture": "example.png",
+    "date": "28/04/2023",
+    "shares": 122,
+    "comments": [
+        "Example Comment",
+        "Example Comment 2",
+    ],
+    "likes": 12,
+    "text": "Example message"
 }
 ```
 
@@ -116,55 +126,97 @@ Add you Rest API design here
 
 ### Request Details
 
-|          |               |
-| -------- | ------------- |
-| Endpoint | ENDPOINT HERE |
-| Method   | METHOD HERE   |
+|          |             |
+| -------- | ----------- |
+| Endpoint | /api/chirps |
+| Method   | GET         |
 
 ### Response Details
 
-|             |                  |
-| ----------- | ---------------- |
-| Status Code | STATUS CODE HERE |
+|             |        |
+| ----------- | ------ |
+| Status Code | 200 OK |
 
 
 #### Example Response Body
 
 ```json
 {
-    "example": "Example"
+    "data": [
+        {
+            "id": 1,
+            "username": "Example User",
+            "profilePicture": "example.png",
+            "date": "28/04/2023",
+            "shares": 122,
+            "comments": [
+                "Example Comment",
+                "Example Comment 2",
+            ],
+            "likes": 12,
+            "text": "Example message"
+        },
+        {
+            "id": 2,
+            "username": "Example User 2",
+            "profilePicture": "example.png",
+            "date": "28/04/2023",
+            "shares": 122,
+            "comments": [
+                "Example Comment",
+                "Example Comment 2",
+            ],
+            "likes": 12,
+            "text": "Example message"
+        },
+    ]
 }
 ```
 
 ## Post a chirp
 
-
 ### Request Details
 
-|          |               |
-| -------- | ------------- |
-| Endpoint | ENDPOINT HERE |
-| Method   | METHOD HERE   |
+|          |             |
+| -------- | ----------- |
+| Endpoint | /api/chirps |
+| Method   | POST        |
 
 #### Example Request Body
 
 ```json
-{   
-    "example": "Example"
+{
+    "username": "Example User 2",
+    "profilePicture": "example.png",
+    "date": "28/04/2023",
+    "shares": 0,
+    "comments": [],
+    "likes": 0,
+    "text": "Example message"
 }
 ```
 
 ### Response Details
 
-|             |                  |
-| ----------- | ---------------- |
-| Status Code | STATUS CODE HERE |
+|             |             |
+| ----------- | ----------- |
+| Status Code | 201 Created |
 
 
 #### Example Response Body
 
 ```json
 {
-    "example": "Example"
+    "id": 3,
+    "username": "Example User 2",
+    "profilePicture": "example.png",
+    "date": "28/04/2023",
+    "shares": 122,
+    "comments": [
+        "Example Comment",
+        "Example Comment 2",
+    ],
+    "likes": 12,
+    "text": "Example message"
 }
 ```
