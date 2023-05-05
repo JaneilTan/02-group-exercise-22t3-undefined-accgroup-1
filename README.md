@@ -168,7 +168,7 @@ Add you Rest API design here
             ],
             "likes": 12,
             "text": "Example message"
-        },
+        }
     ]
 }
 ```
