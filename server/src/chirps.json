@@ -1,0 +1,23 @@
+[
+  {
+    "text": "This is an example chirp",
+    "createdDate": "2022-02-14T16:54:40.000Z",
+    "username": "Andrew",
+    "avatar": "https://placeimg.com/100/100/people",
+    "id": 1
+  },
+  {
+    "text": "This is an example chirp",
+    "createdDate": "2022-02-18T16:54:40.000Z",
+    "username": "Lance",
+    "avatar": "https://placeimg.com/100/100/people",
+    "id": 2
+  },
+  {
+    "text": "This is an example chirp",
+    "createdDate": "2022-02-20T16:54:40.000Z",
+    "username": "Chris",
+    "avatar": "https://placeimg.com/100/100/people",
+    "id": 3
+  }
+]
