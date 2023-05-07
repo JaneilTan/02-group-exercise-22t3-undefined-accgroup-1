@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node src/server.js",
-    "test": "",
-    "awsdasda": "echo Ec"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
