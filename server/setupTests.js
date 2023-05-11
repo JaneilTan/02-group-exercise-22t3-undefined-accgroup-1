@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
-const chirps = require("../data/chirps.json");
-const ChirpModel = require("./models/ChirpModel");
+const chirps = require("./src/chirps.json");
+const ChirpModel = require("./src/models/ChirpModel");
 
 const { MongoMemoryServer } = require("mongodb-memory-server");
 
