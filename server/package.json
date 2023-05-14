@@ -20,11 +20,17 @@
   "homepage": "https://github.com/Developers-Institute-Classrooms/02-21t4-group-exercise#readme",
   "dependencies": {
     "cors": "^2.8.5",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mongoose": "^7.1.1"
   },
   "devDependencies": {
     "jest": "^29.5.0",
     "mongodb-memory-server": "^8.7.2",
     "supertest": "^6.3.3"
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "./setupTests.js"
+    ]
   }
 }

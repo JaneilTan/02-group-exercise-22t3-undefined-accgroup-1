@@ -1,0 +1,23 @@
+[
+  {
+    "text": "This is an example chirp",
+    "createdDate": { "$date": "2022-02-14T16:54:40.000Z" },
+    "username": "Andrew",
+    "avatar": "https://placeimg.com/100/100/people",
+    "_id": { "$oid": "61480db44ab0cf7175467757" }
+  },
+  {
+    "text": "This is an example chirp",
+    "createdDate": { "$date": "2022-02-18T16:54:40.000Z" },
+    "username": "Lance",
+    "avatar": "https://placeimg.com/100/100/people",
+    "_id": { "$oid": "61480db44ab0cf7175467758" }
+  },
+  {
+    "text": "This is an example chirp",
+    "createdDate": { "$date": "2022-02-20T16:54:40.000Z" },
+    "username": "Chris",
+    "avatar": "https://placeimg.com/100/100/people",
+    "_id": { "$oid": "61480db44ab0cf7175467759" }
+  }
+]
