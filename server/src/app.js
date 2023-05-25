@@ -2,16 +2,14 @@ const express = require("express");
 const cors = require("cors");
 const app = express();
 const ChirpModel = require("./models/ChirpModel");
-const formatChirps = require("./formatChirps");
 
 app.use(cors());
 app.use(express.json());
 
 app.get("/chirps", async (req, res) => {
   const chirps = await ChirpModel.find({});
-  const normalChirps = chirps.map(formatChirps);
 
-  res.status(200).send(normalChirps);
+  res.status(200).send(chirps);
 });
 
 app.get("/chirps/:id", async (req, res) => {
@@ -22,8 +20,15 @@ app.get("/chirps/:id", async (req, res) => {
     return res.sendStatus(404);
   }
 
-  const normalChirp = formatChirps(chirp);
-  res.status(200).send(normalChirp);
+  res.status(200).send(chirp);
+});
+
+app.post("/chirps", async (req, res) => {
+  const { body } = req;
+  const chirp = new ChirpModel(body);
+  await chirp.save();
+
+  return res.status(200).send(chirp);
 });
 
 module.exports = app;
