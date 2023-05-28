@@ -11,8 +11,10 @@ function ChirpList() {
       // Async function for loading the chirps
       async function loadChirps() {
         // Make the fetch request to the chirps endpoint
-        const response = await fetch("http://localhost:5001/chirps"); // Convert the response into json
-        const json = await response.json(); // Update the state
+        const response = await fetch("http://localhost:5001/chirps"); 
+        // Convert the response into json
+        const json = await response.json(); 
+        // Update the state
         setChirps(json);
       }
 
